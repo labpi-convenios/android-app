@@ -1,4 +1,4 @@
-package gabrielssilva.androidapp;
+package labpi.convenios.androidapp;
 
 import org.junit.Test;
 

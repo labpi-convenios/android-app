@@ -1,10 +1,10 @@
-package gabrielssilva.adapter;
+package labpi.convenios.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import gabrielssilva.androidapp.PlaceholderFragment;
+import labpi.convenios.androidapp.PlaceholderFragment;
 
 public class TabsAdapter extends FragmentPagerAdapter {
 
