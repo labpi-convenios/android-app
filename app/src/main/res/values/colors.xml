@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#038B75</color>
     <color name="colorAccent">#19384D</color>
     <color name="colorBackground">#FFFEFF</color>
+    <color name="colorGreenProgressBar">#00cc00</color>
 </resources>
