@@ -4,10 +4,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
 
+import labpi.convenios.adapter.CardListAdapter;
 import labpi.convenios.adapter.TabsAdapter;
 
 
@@ -27,13 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabs = (TabLayout) this.findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_tabbed, menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 }
