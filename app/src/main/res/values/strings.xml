@@ -2,5 +2,5 @@
     <string name="app_name">Propostas e Convênios</string>
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_project_description_activiry">Propostas e Convênios</string>
 </resources>

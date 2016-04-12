@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_project_description"
+    tools:context="labpi.convenios.androidapp.ProjectDescription">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nome"
+        android:id="@+id/nameProjectTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="123dp"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Programa"
+        android:id="@+id/programProjectTextView"
+        android:layout_marginTop="43dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/nameProjectTextView"
+        android:layout_alignStart="@+id/nameProjectTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at placerat nunc, nec ultrices enim. Etiam quis enim eu ipsum posuere dignissim."
+        android:id="@+id/projectDescriptionTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/programProjectTextView"
+        android:textColor="@color/colorAccent" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignEnd="@+id/projectDescriptionTextView"
+        android:progress="50"
+        android:minWidth="100dp"
+        android:progressTint="@color/colorGreenProgressBar"
+        android:layout_alignTop="@+id/nameProjectTextView" />
+
+</RelativeLayout>

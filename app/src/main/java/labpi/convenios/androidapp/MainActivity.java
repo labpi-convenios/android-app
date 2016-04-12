@@ -36,24 +36,8 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
 
-        //Comentei essa linha abaixo porque ta visivel para ter como testar
-        //menu.findItem(R.id.buttons_overflow).setVisible(false);
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId() == R.id.buttons_overflow){
-            ProjectDescription projectDescription = new ProjectDescription();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container, projectDescription);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
