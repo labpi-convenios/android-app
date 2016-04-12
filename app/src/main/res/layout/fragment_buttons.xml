@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#59000000"
+    android:id="@+id/fragment_buttons"
+    tools:context="labpi.convenios.androidapp.PlaceholderFragment">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pra Quê?"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/what_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorBackground" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguir"
+        android:background="@color/colorGrayButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/follow_button"
+        android:layout_above="@+id/what_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relato"
+        android:background="@color/colorGrayButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/report_button"
+        android:layout_above="@+id/follow_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar"
+        android:id="@+id/share_button"
+        android:layout_above="@+id/report_button"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGrayButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignEnd="@+id/report_button" />
+</RelativeLayout>
