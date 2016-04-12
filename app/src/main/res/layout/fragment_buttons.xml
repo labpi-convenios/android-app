@@ -10,35 +10,35 @@
     android:id="@+id/fragment_buttons"
     tools:context=".fragments.FavoritesFragment">
 
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pra Quê?"
+        android:text="Cancelar"
         android:textColor="@color/colorPrimaryDark"
-        android:id="@+id/what_button"
+        android:id="@+id/cancel_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:background="@color/colorBackground" />
+        android:background="@drawable/button_border"/>
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seguir"
-        android:background="@color/colorGrayButton"
+        android:background="@drawable/button_border"
         android:textColor="@color/colorPrimaryDark"
         android:id="@+id/follow_button"
-        android:layout_above="@+id/what_button"
+        android:layout_above="@+id/cancel_button"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="63dp"
         android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Relato"
-        android:background="@color/colorGrayButton"
+        android:background="@drawable/button_border"
         android:textColor="@color/colorPrimaryDark"
         android:id="@+id/report_button"
         android:layout_above="@+id/follow_button"
@@ -52,7 +52,19 @@
         android:id="@+id/share_button"
         android:layout_above="@+id/report_button"
         android:layout_alignParentStart="true"
-        android:background="@color/colorGrayButton"
+        android:background="@drawable/button_border"
         android:textColor="@color/colorPrimaryDark"
         android:layout_alignEnd="@+id/report_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pra Quê?"
+        android:id="@+id/what_button"
+        android:layout_above="@+id/cancel_button"
+        android:layout_alignEnd="@+id/follow_button"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_border"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorPrimaryDark"/>
 </RelativeLayout>

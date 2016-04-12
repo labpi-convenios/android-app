@@ -5,10 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import labpi.convenios.androidapp.fragments.ButtonsFragment;
 
-public class ProjectDescriptionActivity extends AppCompatActivity {
+public class ProjectDescriptionActivity extends AppCompatActivity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_project_description"
+    tools:context="labpi.convenios.androidapp.ProjectDescription">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A proposta foi concluída?"
+        android:id="@+id/isProposalCompleted"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="93dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não sei informar"
+        android:id="@+id/dont_know_button"
+        android:layout_below="@+id/isProposalCompleted"
+        android:layout_alignStart="@+id/isProposalCompleted"
+        android:layout_marginTop="33dp"
+        android:layout_alignEnd="@+id/isProposalCompleted" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foi Concluída"
+        android:id="@+id/completed"
+        android:layout_alignTop="@+id/dont_know_button"
+        android:layout_toEndOf="@+id/dont_know_button" />
+
+
+</RelativeLayout>
