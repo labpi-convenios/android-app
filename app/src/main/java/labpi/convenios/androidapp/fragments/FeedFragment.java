@@ -8,8 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;
+
 import labpi.convenios.adapter.CardListAdapter;
 import labpi.convenios.androidapp.R;
+import labpi.convenios.data.mock.FakeDatabase;
+import labpi.convenios.model.Convenio;
 
 public class FeedFragment extends Fragment {
 
@@ -27,7 +31,9 @@ public class FeedFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new CardListAdapter());
+
+        List<Convenio> data = FakeDatabase.dataFromFile(this.getContext(), "mock_favorites.csv");
+        recyclerView.setAdapter(new CardListAdapter(data));
         return rootView;
     }
 }
