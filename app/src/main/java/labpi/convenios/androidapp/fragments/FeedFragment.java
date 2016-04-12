@@ -1,30 +1,23 @@
-package labpi.convenios.androidapp;
+package labpi.convenios.androidapp.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import labpi.convenios.adapter.CardListAdapter;
+import labpi.convenios.androidapp.R;
 
-public class PlaceholderFragment extends Fragment {
+public class FeedFragment extends Fragment {
 
-    private static final String ARG_SECTION_NUMBER = "section_number";
-
-    public PlaceholderFragment() {
+    public FeedFragment() {
     }
 
-    public static PlaceholderFragment newInstance(int sectionNumber) {
-        PlaceholderFragment fragment = new PlaceholderFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-        fragment.setArguments(args);
-        return fragment;
+    public static FeedFragment newInstance() {
+        return new FeedFragment();
     }
 
     @Override
@@ -37,6 +30,4 @@ public class PlaceholderFragment extends Fragment {
         recyclerView.setAdapter(new CardListAdapter());
         return rootView;
     }
-
-
 }

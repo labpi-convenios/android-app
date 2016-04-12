@@ -4,7 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import labpi.convenios.androidapp.PlaceholderFragment;
+import labpi.convenios.androidapp.fragments.AboutFragment;
+import labpi.convenios.androidapp.fragments.FavoritesFragment;
+import labpi.convenios.androidapp.fragments.FeedFragment;
 
 public class TabsAdapter extends FragmentPagerAdapter {
 
@@ -14,7 +16,15 @@ public class TabsAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return PlaceholderFragment.newInstance(position+1);
+        switch (position) {
+            case 0:
+                return FeedFragment.newInstance();
+            case 1:
+                return FavoritesFragment.newInstance();
+            case 2:
+                return AboutFragment.newInstance();
+        }
+        return null;
     }
 
     @Override
@@ -26,11 +36,11 @@ public class TabsAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "SECTION 1";
+                return "Ao redor";
             case 1:
-                return "SECTION 2";
+                return "Favoritos";
             case 2:
-                return "SECTION 3";
+                return "Sobre";
         }
         return null;
     }

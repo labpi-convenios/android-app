@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#59000000"
     android:id="@+id/fragment_buttons"
-    tools:context="labpi.convenios.androidapp.PlaceholderFragment">
+    tools:context=".fragments.FavoritesFragment">
 
 
     <Button
