@@ -16,6 +16,7 @@ public class ProjectDescriptionActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) this.findViewById(R.id.toolbar_project_description);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 
