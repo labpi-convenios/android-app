@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#59000000"
-    android:id="@+id/fragment_buttons"
+    android:id="@+id/buttons_relative_layout"
     tools:context=".fragments.FavoritesFragment">
 
     <Button

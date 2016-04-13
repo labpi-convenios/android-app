@@ -26,8 +26,7 @@ public class ReportFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_buttons, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_report, container, false);
         return view;
     }
 
