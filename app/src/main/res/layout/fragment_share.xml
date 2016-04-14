@@ -34,37 +34,49 @@
         <ImageButton
             android:layout_width="98dp"
             android:layout_height="80dp"
-            android:id="@+id/sms"
-            android:layout_gravity="left|top" />
-
-        <ImageButton
-            android:layout_width="98dp"
-            android:layout_height="80dp"
-            android:id="@+id/mail"
-            android:layout_gravity="center_horizontal|top" />
-
-        <ImageButton
-            android:layout_width="98dp"
-            android:layout_height="80dp"
             android:id="@+id/twitter"
+            android:background="@android:color/transparent"
+            android:layout_gravity="left|top"
+            android:src="@drawable/twitter"/>
+
+        <ImageButton
+            android:layout_width="98dp"
+            android:layout_height="80dp"
+            android:id="@+id/google_plus"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/google_plus"/>
+
+        <ImageButton
+            android:layout_width="98dp"
+            android:layout_height="80dp"
+            android:id="@+id/facebook"
+            android:background="@android:color/transparent"
+            android:src="@drawable/facebook"
             android:layout_gravity="right|top" />
 
         <ImageButton
             android:layout_width="98dp"
             android:layout_height="80dp"
-            android:id="@+id/imageButton5"
+            android:id="@+id/mail"
+            android:src="@drawable/message"
+            android:background="@android:color/transparent"
             android:layout_gravity="left|bottom" />
 
         <ImageButton
             android:layout_width="98dp"
             android:layout_height="80dp"
-            android:id="@+id/imageButton4"
+            android:id="@+id/pdf"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pdf"
             android:layout_gravity="center_horizontal|bottom" />
 
         <ImageButton
             android:layout_width="98dp"
             android:layout_height="80dp"
-            android:id="@+id/print"
+            android:id="@+id/sms"
+            android:background="@android:color/transparent"
+            android:src="@drawable/sms"
             android:layout_gravity="right|bottom" />
 
     </FrameLayout>
