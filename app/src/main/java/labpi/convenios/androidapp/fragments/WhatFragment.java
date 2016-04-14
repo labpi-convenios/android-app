@@ -68,9 +68,14 @@ public class WhatFragment extends Fragment implements View.OnClickListener{
                 alertMessage.setVisibility(View.VISIBLE);
                 break;
             case R.id.confirmButton:
-                Toast.makeText(getContext(), "Sua solicitação foi enviada com sucesso!", Toast.LENGTH_LONG).show();
-                getFragmentManager().popBackStack();
-                getFragmentManager().popBackStack();
+                if (whyOption.isChecked() || provesOption.isChecked()) {
+                    Toast.makeText(getContext(), "Sua solicitação foi enviada com sucesso!", Toast.LENGTH_LONG).show();
+                    getFragmentManager().popBackStack();
+                    getFragmentManager().popBackStack();
+                }
+                else {
+                    Toast.makeText(getContext(), "Você não marcou nenhuma opção", Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.cancelButton:
                 getFragmentManager().popBackStack();

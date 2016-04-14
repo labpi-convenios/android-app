@@ -37,7 +37,9 @@
             android:id="@+id/twitter"
             android:background="@android:color/transparent"
             android:layout_gravity="left|top"
-            android:src="@drawable/twitter" />
+            android:layout_marginTop="15dp"
+            android:src="@drawable/twitter"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="98dp"
@@ -45,7 +47,9 @@
             android:id="@+id/google_plus"
             android:background="@android:color/transparent"
             android:layout_gravity="center_horizontal|top"
-            android:src="@drawable/google_plus"/>
+            android:src="@drawable/google_plus"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="98dp"
@@ -53,7 +57,9 @@
             android:id="@+id/facebook"
             android:background="@android:color/transparent"
             android:src="@drawable/facebook"
-            android:layout_gravity="right|top" />
+            android:layout_gravity="right|top"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="98dp"
@@ -61,7 +67,9 @@
             android:id="@+id/mail"
             android:src="@drawable/message"
             android:background="@android:color/transparent"
-            android:layout_gravity="left|bottom" />
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="98dp"
@@ -69,7 +77,9 @@
             android:id="@+id/pdf"
             android:background="@android:color/transparent"
             android:src="@drawable/pdf"
-            android:layout_gravity="center_horizontal|bottom" />
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitCenter" />
 
         <ImageButton
             android:layout_width="98dp"
@@ -77,7 +87,9 @@
             android:id="@+id/sms"
             android:background="@android:color/transparent"
             android:src="@drawable/sms"
-            android:layout_gravity="right|bottom" />
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitCenter" />
 
     </FrameLayout>
 
