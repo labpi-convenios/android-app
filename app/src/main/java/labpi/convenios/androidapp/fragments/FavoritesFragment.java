@@ -33,7 +33,7 @@ public class FavoritesFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         List<Convenio> data = FakeDatabase.dataFromFile(this.getContext(), "mock_favorites.csv");
-        recyclerView.setAdapter(new CardListAdapter(data));
+        recyclerView.setAdapter(new CardListAdapter(this.getContext(), data));
 
         return rootView;
     }

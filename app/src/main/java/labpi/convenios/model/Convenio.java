@@ -1,7 +1,9 @@
 package labpi.convenios.model;
 
 
-public class Convenio {
+import java.io.Serializable;
+
+public class Convenio implements Serializable {
 
     private String ano;
     private String anoProposta;
