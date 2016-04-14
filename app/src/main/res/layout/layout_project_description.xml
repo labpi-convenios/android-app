@@ -1,106 +1,133 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout_project_description"
     tools:context="labpi.convenios.androidapp.ProjectDescription">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Nome do Projeto"
-            android:id="@+id/nameProjectTextView"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="80dp"
-            android:textColor="@color/colorAccent"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nome do Projeto"
+        android:id="@+id/nameProjectTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Ano do Convêncio:"
-            android:id="@+id/yearTextView"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorAccent"
-            android:layout_below="@+id/nameProjectTextView"
-            android:layout_alignStart="@+id/nameProjectTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ano do Convêncio:"
+        android:id="@+id/yearLabel"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/nameProjectTextView"
+        android:layout_alignStart="@+id/nameProjectTextView" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Proponente:"
-            android:id="@+id/proposerTextView"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorAccent"
-            android:layout_below="@+id/yearTextView"
-            android:layout_alignStart="@+id/yearTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Proponente:"
+        android:id="@+id/proposerLabel"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/yearLabel"
+        android:layout_alignStart="@+id/yearLabel" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Valor de Repasse:"
-            android:id="@+id/valueTextView"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorAccent"
-            android:layout_below="@+id/proposerTextView"
-            android:layout_alignStart="@+id/proposerTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Valor de Repasse:"
+        android:id="@+id/valueLabel"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/proposerLabel"
+        android:layout_alignStart="@+id/proposerLabel" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Porcentagem de Conclusão:"
-            android:id="@+id/conclusionTextView"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorAccent"
-            android:layout_below="@+id/valueTextView"
-            android:layout_alignStart="@+id/valueTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Já está pronto?"
+        android:id="@+id/conclusionTextView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/valueLabel"
+        android:layout_alignStart="@+id/valueLabel" />
 
-        <ProgressBar
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressBar"
-            android:progress="50"
-            android:minWidth="100dp"
-            android:progressTint="@color/colorGreenProgressBar"
-            android:layout_alignTop="@+id/conclusionTextView"
-            android:layout_marginRight="7dp"
-            android:layout_marginTop="4dp"
-            android:layout_alignParentEnd="true" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:progress="50"
+        android:minWidth="100dp"
+        android:progressTint="@color/colorGreenProgressBar"
+        android:layout_alignTop="@+id/conclusionTextView"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentEnd="true" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Descrição da Proposta:"
-            android:id="@+id/descriptionLabel"
-            android:textColor="@color/colorAccent"
-            android:layout_below="@+id/conclusionTextView"
-            android:layout_marginTop="20dp"
-            android:layout_alignStart="@+id/conclusionTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Descrição da Proposta:"
+        android:id="@+id/descriptionLabel"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/conclusionTextView"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/conclusionTextView" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/lorem_ipsum"
-            android:id="@+id/descriptionTextView"
-            android:layout_below="@+id/descriptionLabel"
-            android:layout_alignStart="@+id/descriptionLabel"
-            android:layout_alignEnd="@+id/progressBar"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/lorem_ipsum"
+        android:id="@+id/descriptionTextView"
+        android:layout_below="@+id/descriptionLabel"
+        android:layout_alignStart="@+id/descriptionLabel"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"/>
 
-    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/yearTextView"
+        android:layout_alignTop="@+id/yearLabel"
+        android:layout_toEndOf="@+id/yearLabel"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorAccent"/>
 
-</ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/proposerTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/proposerLabel"
+        android:layout_toEndOf="@+id/proposerLabel"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/valueTextView"
+        android:layout_above="@+id/conclusionTextView"
+        android:layout_toEndOf="@+id/yearLabel"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>

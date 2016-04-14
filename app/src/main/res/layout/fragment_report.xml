@@ -37,7 +37,7 @@
             android:background="@drawable/button_border_green"/>
 
         <Button
-            android:layout_width="165dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Foi Concluída"
             android:id="@+id/completed"
@@ -65,5 +65,26 @@
         android:layout_below="@+id/linearLayout"
         android:layout_marginTop="10dp"
         android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Deseja adicionar um comentário?"
+        android:id="@+id/commentLabel"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Comentário"
+        android:id="@+id/sendComment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:background="@drawable/button_border_green"
+        android:layout_marginBottom="25dp"/>
 
 </RelativeLayout>

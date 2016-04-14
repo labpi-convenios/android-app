@@ -37,7 +37,7 @@
             android:id="@+id/twitter"
             android:background="@android:color/transparent"
             android:layout_gravity="left|top"
-            android:src="@drawable/twitter"/>
+            android:src="@drawable/twitter" />
 
         <ImageButton
             android:layout_width="98dp"

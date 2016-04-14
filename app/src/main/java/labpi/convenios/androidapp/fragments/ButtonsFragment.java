@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import labpi.convenios.androidapp.R;
 
@@ -45,6 +46,9 @@ public class ButtonsFragment extends Fragment implements View.OnClickListener{
 
         Button whatButton = (Button) view.findViewById(R.id.what_button);
         whatButton.setOnClickListener(this);
+
+        Button followButton = (Button) view.findViewById(R.id.follow_button);
+        followButton.setOnClickListener(this);
     }
 
     @Override
@@ -73,7 +77,8 @@ public class ButtonsFragment extends Fragment implements View.OnClickListener{
                         .commit();
                 break;
             case R.id.follow_button:
-                //Colocar aqui o que deve ser feito ao clicar no botao compartilhar
+                getFragmentManager().popBackStack();
+                Toast.makeText(getContext(), "Agora essa proposta aparecerá nos seus Favoritos e você será avisado quando surgirem novas informações sobre ela", Toast.LENGTH_LONG).show();
                 break;
             default:
 

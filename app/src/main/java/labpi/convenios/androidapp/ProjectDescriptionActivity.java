@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import labpi.convenios.androidapp.fragments.ButtonsFragment;
 import labpi.convenios.model.Convenio;
 
