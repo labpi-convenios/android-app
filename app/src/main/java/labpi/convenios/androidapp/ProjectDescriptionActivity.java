@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
 import labpi.convenios.androidapp.fragments.ButtonsFragment;
 
@@ -34,7 +32,9 @@ public class ProjectDescriptionActivity extends AppCompatActivity{
 
         if(item.getItemId() == R.id.buttons_overflow){
             ButtonsFragment buttonsFragment = new ButtonsFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_project_description, buttonsFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.layout_project_description, buttonsFragment)
+                    .addToBackStack(null)
+                    .commit();
             return true;
         }
 

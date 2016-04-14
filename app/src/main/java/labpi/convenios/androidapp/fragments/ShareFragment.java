@@ -3,7 +3,6 @@ package labpi.convenios.androidapp.fragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -11,11 +10,11 @@ import android.widget.Button;
 import labpi.convenios.androidapp.R;
 
 /**
- * Created by izabela on 12/04/16.
+ * Created by izabela on 13/04/16.
  */
-public class ReportFragment extends Fragment {
+public class ShareFragment extends Fragment implements View.OnClickListener{
 
-    public ReportFragment(){
+    public ShareFragment(){
     }
 
     @Override
@@ -27,8 +26,20 @@ public class ReportFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_report, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_share, container, false);
+
+        Button cancelButton = (Button) view.findViewById(R.id.cancel_button);
+        cancelButton.setOnClickListener(this);
+
+
         return view;
     }
 
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.cancel_button){
+           getFragmentManager().popBackStack();
+        }
+    }
 }

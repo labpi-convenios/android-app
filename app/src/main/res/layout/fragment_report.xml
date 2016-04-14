@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment_project_description"
+    android:id="@+id/layout_project_description"
     android:background="@color/colorBackground"
     tools:context="labpi.convenios.androidapp.ProjectDescription">
 
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="A proposta foi concluída?"
-        android:id="@+id/isProposalCompleted"
+        android:id="@+id/clarificationTextView"
         android:layout_marginTop="90dp"
         android:textColor="@color/colorAccent"
         android:layout_alignParentTop="true"
@@ -23,22 +23,22 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/isProposalCompleted"
+        android:layout_below="@+id/clarificationTextView"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_alignStart="@+id/isProposalCompleted"
+        android:layout_alignStart="@+id/clarificationTextView"
         android:id="@+id/linearLayout">
 
         <Button
             android:layout_width="165dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="Não sei informar"
             android:id="@+id/dont_know"
             android:background="@drawable/button_border_green"/>
 
         <Button
             android:layout_width="165dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="Foi Concluída"
             android:id="@+id/completed"
             android:background="@drawable/button_border_green"/>

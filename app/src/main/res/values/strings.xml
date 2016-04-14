@@ -4,7 +4,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_project_description_activiry">Propostas e Convênios</string>
     <string name="section_format">Hello World from section: %1$d</string>
-
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at placerat nunc, nec ultrices enim. Etiam quis enim eu ipsum posuere dignissim."</string>
     <string name="placeholder">Placeholder</string>
->>>>>>> Stashed changes
 </resources>

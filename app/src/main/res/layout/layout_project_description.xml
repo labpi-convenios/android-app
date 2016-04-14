@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment_project_description"
+    android:id="@+id/layout_project_description"
     tools:context="labpi.convenios.androidapp.ProjectDescription">
 
 
@@ -10,21 +10,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Nome"
+        android:text="Nome do Projeto"
         android:id="@+id/nameProjectTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorAccent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="123dp"
-        android:textColor="@color/colorAccent" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Programa"
-        android:id="@+id/programProjectTextView"
-        android:layout_marginTop="43dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ano do Convêncio:"
+        android:id="@+id/yearTextView"
+        android:layout_marginTop="20dp"
         android:textColor="@color/colorAccent"
         android:layout_below="@+id/nameProjectTextView"
         android:layout_alignStart="@+id/nameProjectTextView" />
@@ -32,23 +32,70 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="34dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at placerat nunc, nec ultrices enim. Etiam quis enim eu ipsum posuere dignissim."
-        android:id="@+id/projectDescriptionTextView"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/programProjectTextView"
-        android:textColor="@color/colorAccent" />
+        android:text="Proponente:"
+        android:id="@+id/proposerTextView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/yearTextView"
+        android:layout_alignStart="@+id/yearTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Valor de Repasse:"
+        android:id="@+id/valueTextView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/proposerTextView"
+        android:layout_alignStart="@+id/proposerTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Porcentagem de Conclusão:"
+        android:id="@+id/conclusionTextView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/valueTextView"
+        android:layout_alignStart="@+id/valueTextView" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
-        android:layout_alignEnd="@+id/projectDescriptionTextView"
         android:progress="50"
         android:minWidth="100dp"
         android:progressTint="@color/colorGreenProgressBar"
-        android:layout_alignTop="@+id/nameProjectTextView" />
+        android:layout_alignTop="@+id/conclusionTextView"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Descrição da Proposta:"
+        android:id="@+id/descriptionTextView"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/conclusionTextView"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/conclusionTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lorem_ipsum"
+        android:id="@+id/descriptionTedtView"
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_alignStart="@+id/descriptionTextView"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"/>
 
 </RelativeLayout>
