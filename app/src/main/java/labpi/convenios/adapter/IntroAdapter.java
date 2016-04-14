@@ -7,9 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import labpi.convenios.androidapp.fragments.IntroFragment;
 
-/**
- * Created by izabela on 13/04/16.
- */
 public class IntroAdapter extends FragmentPagerAdapter {
 
     public IntroAdapter(FragmentManager fm) {
@@ -20,9 +17,9 @@ public class IntroAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return IntroFragment.newInstance(Color.parseColor("#038B75"), position);
+                return IntroFragment.newInstance(position);
             default:
-                return IntroFragment.newInstance(Color.parseColor("#4CAF50"), position); // green
+                return IntroFragment.newInstance(position); // green
         }
     }
 

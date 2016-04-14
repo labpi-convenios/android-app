@@ -7,4 +7,10 @@
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at placerat nunc, nec ultrices enim. Etiam quis enim eu ipsum posuere dignissim."</string>
     <string name="placeholder">Placeholder</string>
     <string name="title_activity_intro">Intro</string>
+
+    <string name="intro_button_text">Começar</string>
+    <string name="intro_title">Fiscalize</string>
+    <string name="intro_action_call_1">Informe-se sobre a situação dos convênios executados próximos a você</string>
+    <string name="intro_action_call_2">Relate o andamento das propostas, e compartilhe</string>
+
 </resources>

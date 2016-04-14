@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.view.ViewPager
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/viewpager"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    />
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+
+        android:id="@+id/intro_title"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/intro_title"/>
+
+    <Button
+        android:id="@+id/intro_start"
+        android:layout_below="@+id/intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/intro_button_text"/>
+</RelativeLayout>
+
