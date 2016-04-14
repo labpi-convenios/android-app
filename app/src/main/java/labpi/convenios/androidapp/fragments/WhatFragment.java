@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,6 +47,12 @@ public class WhatFragment extends Fragment implements View.OnClickListener{
         provesOption = (RadioButton) view.findViewById(R.id.provesButton);
         provesOption.setOnClickListener(this);
 
+        Button confirmButton = (Button) view.findViewById(R.id.confirmButton);
+        confirmButton.setOnClickListener(this);
+
+        Button cancelButton = (Button) view.findViewById(R.id.cancelButton);
+        cancelButton.setOnClickListener(this);
+
         return view;
     }
 
@@ -61,9 +68,12 @@ public class WhatFragment extends Fragment implements View.OnClickListener{
                 alertMessage.setVisibility(View.VISIBLE);
                 break;
             case R.id.confirmButton:
-                Toast.makeText(getContext(), "Sua solicitação foi enviada com sucesso!", Toast.LENGTH_LONG);
+                Toast.makeText(getContext(), "Sua solicitação foi enviada com sucesso!", Toast.LENGTH_LONG).show();
+                getFragmentManager().popBackStack();
+                getFragmentManager().popBackStack();
                 break;
-            case R.id.cancel_button:
+            case R.id.cancelButton:
+                getFragmentManager().popBackStack();
                 getFragmentManager().popBackStack();
                 break;
             default:
