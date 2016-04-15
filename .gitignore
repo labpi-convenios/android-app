@@ -1,5 +1,5 @@
 # Built application files
-*.apk
+#*.apk
 *.ap_
 
 # Files for the Dalvik VM
@@ -9,12 +9,12 @@
 *.class
 
 # Generated files
+#build/
 bin/
 gen/
 
 # Gradle files
 .gradle/
-build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -35,6 +35,5 @@ captures/
 .DS_Store
 
 # Android studio files
-.idea/workspace.xml
-.idea/libraries
+.idea/
 *.iml
