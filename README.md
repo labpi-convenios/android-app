@@ -1,14 +1,29 @@
-# Protótipo Funcional: Android
+# Android-app
 
-Este é um protótipo funcional que tem como finalidade demonstrar a viabilidade da utilização de dados de Convênios e Propostas em um aplicativo de participação social e combate à corrupcão. Submetido em participação à hackathon do Ministério da Justiça (2016).
 
-## Executando o projeto
+Este é um protótipo funcional que tem como finalidade demonstrar a viabilidade da utilização de dados de Convênios e Propostas em um aplicativo de participação social e combate à corrupcão. Submetido em participaçãp à hackathon do Ministério da Justiça (2016).
 
-Este é um projeto Android que pode ser importado por alguma IDE (como por exemplo o Android Studio), e executado através das ferramentas de depuração, executando a instalação em um emulador (como o Genymotion), ou em um dispositivo Android conectado via USB.
+## Tutorial
 
-Além disto, um arquivo APK foi gerado, e pode ser encontrado na pasta `build` da raiz do projeto. Este arquivo pode ser carregado e instalado diretamente no dispositivo, sem a necessidade de outras ferramentas.
+### Passo a passo para execução
+
+1 - Importe o projeto na IDE de sua preferência (como por exemplo o Android Studio)
+
+2 - Instale um emulador (como o Genymotion)
+
+3 - Execute o projeto no emulador ou em dispositivo Android conectado via USB
+
+### Passo a passo para instalação
+
+1 - Vá até a pasta  `build` na raiz do projeto
+
+2 - Faça download do arquivo APK
+
+3 - Carregue e instale diretamente no dispositivo, sem a necessidade de outras ferramentas.
+
 
 A versão mínima do Android exigida para a execução deste aplicativo é a 4.4 (Android KitKat). 
+
 
 ## Mais sobre o projeto
 
