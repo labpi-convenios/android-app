@@ -9,3 +9,7 @@ Este é um projeto Android que pode ser importado por alguma IDE (como por exemp
 Além disto, um arquivo APK foi gerado, e pode ser encontrado na pasta `build` da raiz do projeto. Este arquivo pode ser carregado e instalado diretamente no dispositivo, sem a necessidade de outras ferramentas.
 
 A versão mínima do Android exigida para a execução deste aplicativo é a 4.4 (Android KitKat). 
+
+## Mais sobre o projeto
+
+Fizemos um [vídeo](https://www.youtube.com/watch?v=MeXjcsEGn9A) que ajuda a entender nossa proposta. 
